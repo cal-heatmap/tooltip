@@ -1,0 +1,14 @@
+{
+  "compilerOptions": {
+    "target": "es2016",                                  
+    "module": "esnext",                                
+    "moduleResolution": "node",                       
+    "outDir": "build-tsc",                                   
+    "esModuleInterop": true,                             
+    "forceConsistentCasingInFileNames": true,            
+    "strict": true,                                      
+    "noUnusedParameters": true,                       
+    "skipLibCheck": true                                 
+  },
+  "include": ["./src/**/*.ts", "./test/**/*.ts", "./test/**/*.js", "./*.js"]
+}

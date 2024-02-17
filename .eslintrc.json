@@ -1,0 +1,25 @@
+{
+  "extends": [
+    "airbnb-base",
+    "airbnb-typescript/base"
+  ],
+  "env": {
+    "browser": true
+  },
+  "parserOptions": {
+    "sourceType": "module",
+    "ecmaVersion": 13,
+    "project": "./tsconfig.json"
+  },
+  "parser": "@typescript-eslint/parser",
+  "rules": {
+    "no-prototype-builtins": "off",
+    "operator-linebreak": ["error", "after"],
+    "max-len": ["error", { "code": 80 }]
+  },
+  "plugins": [ "@typescript-eslint"],
+  "ignorePatterns": ["dist/*"],
+  "globals": {
+    "globalThis": false
+  }
+}
