@@ -6,7 +6,7 @@
   "type": "module",
   "repository": {
     "type": "git",
-    "url": "https://github.com/@cal-heatmap/tooltip.git"
+    "url": "https://github.com/cal-heatmap/tooltip.git"
   },
   "homepage": "https://cal-heatmap.com",
   "scripts": {
