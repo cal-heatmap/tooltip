@@ -2,7 +2,6 @@
   "name": "@cal-heatmap/tooltip",
   "version": "1.0.0-beta.0",
   "description": "Tooltip plugin for cal-heatmap",
-  "main": "index.js",
   "type": "module",
   "repository": {
     "type": "git",
@@ -21,6 +20,7 @@
   "author": "",
   "license": "MIT",
   "browserslist": "last 2 versions, not dead, > 0.2%",
+  "main": "./dist/tooltip.esm.js",
   "exports": {
     ".": {
       "import": "./dist/tooltip.esm.js",
