@@ -18,7 +18,7 @@ export interface ITooltip extends IPlugin {
 }
 
 export default class Tooltip {
-  name: string;
+  static readonly VERSION: number;
 
   calendar: CalHeatmap;
 

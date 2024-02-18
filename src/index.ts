@@ -46,9 +46,7 @@ const virtualElement: VirtualElement = {
 };
 
 export default class Tooltip implements ITooltip {
-  readonly VERSION = VERSION;
-
-  readonly name = 'Tooltip';
+  static readonly VERSION = VERSION;
 
   calendar: CalHeatmap;
 
