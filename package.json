@@ -21,11 +21,12 @@
   "license": "MIT",
   "browserslist": "last 2 versions, not dead, > 0.2%",
   "main": "./dist/tooltip.esm.js",
+  "types": "./src/types.d.ts",
   "exports": {
     ".": {
       "import": "./dist/tooltip.esm.js",
       "require": "./dist/tooltip.js",
-      "types": "./src/index.d.ts"
+      "types": "./src/types.d.ts"
     },
     "./package.json": "./package.json",
     "./tooltip.css": "./dist/tooltip.css"
