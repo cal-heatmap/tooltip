@@ -48,7 +48,7 @@ const virtualElement: VirtualElement = {
 export default class Tooltip implements ITooltip {
   static readonly VERSION = VERSION;
 
-  calendar: CalHeatmap;
+  calendar!: CalHeatmap;
 
   root: HTMLElement | null;
 
@@ -60,15 +60,15 @@ export default class Tooltip implements ITooltip {
 
   listenerAttached: boolean;
 
-  constructor(calendar: CalHeatmap) {
-    this.calendar = calendar;
+  constructor() {
     this.root = null;
     this.popperInstance = null;
     this.options = defaultOptions;
     this.listenerAttached = false;
   }
 
-  setup(pluginOptions?: Partial<TooltipOptions>): void {
+  setup(calendar: CalHeatmap, pluginOptions?: Partial<TooltipOptions>): void {
+    this.calendar = calendar;
     this.options = { ...defaultOptions, ...pluginOptions };
     const event = this.calendar.eventEmitter;
 
@@ -126,6 +126,10 @@ export default class Tooltip implements ITooltip {
 
   // eslint-disable-next-line class-methods-use-this
   paint(): Promise<unknown> {
+    if (!this.calendar) {
+      throw new Error('Calendar is not initialized');
+    }
+
     return Promise.resolve();
   }
 

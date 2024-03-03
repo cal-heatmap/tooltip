@@ -26,7 +26,7 @@ export default class Tooltip {
 
   root: any;
 
-  setup: (options?: PluginOptions) => void;
+  setup: (calendar: CalHeatmap, options?: PluginOptions) => void;
 
   paint: () => Promise<unknown>;
 

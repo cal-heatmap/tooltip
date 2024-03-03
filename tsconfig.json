@@ -8,7 +8,8 @@
     "forceConsistentCasingInFileNames": true,
     "strict": true,
     "noUnusedParameters": true,
-    "skipLibCheck": true
+    "skipLibCheck": true,
+    "lib": ["es2020", "dom"]
   },
   "include": ["./src/**/*.ts", "./test/**/*.ts", "./test/**/*.js", "./*.js"]
 }
